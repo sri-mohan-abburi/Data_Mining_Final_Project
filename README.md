@@ -1,3 +1,2 @@
-# Data_Mining_Final_Project
+# Data_Mining_Final_Project - IEEE-CIS-Fraud-Detection
 
-definetly will select the project tomorrow
