@@ -19,4 +19,3 @@ A production-oriented data mining project focused on detecting fraudulent e-comm
 
 ---
 
-I built a fraud detection pipeline on a memory-constrained 8GB machine. I had to architect a custom ingestion engine that used data type downcasting to reduce the memory footprint by over 60%, allowing me to perform complex joins that would normally crash a standard environment.
