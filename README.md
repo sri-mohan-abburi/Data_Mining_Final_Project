@@ -18,5 +18,3 @@ A production-oriented data mining project focused on detecting fraudulent e-comm
 | **Mar 20** | EDA | Feature Distribution | Identified class imbalance (3.5% Fraud) and log-transformed `TransactionAmt`. |
 
 ---
-
-No updates today
