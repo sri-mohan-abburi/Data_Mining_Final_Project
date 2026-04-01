@@ -1,7 +1,6 @@
 # IEEE-CIS Fraud Detection: High-Throughput Engineering Pipeline
 
-A production-oriented data mining project focused on detecting fraudulent e-commerce transactions using the Vesta real-world dataset.
-
+A production-oriented data mining project focused on detecting fraudulent e-commerce transactions using the Vesta real-world datase
 ### Engineering Constraints & Strategy
 * **Hardware:** Optimized for **8GB RAM** (MacBook Air).
 * **Core Strategy:** Implemented a **Memory-First Ingestion Pipeline** using automated type-downcasting and garbage collection to handle 500k+ records on consumer hardware.
