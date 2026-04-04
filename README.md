@@ -1,4 +1,4 @@
-# IEEE-CIS Fraud Detection: High-Throughput Engineering Pipeline
+# IEEE-CIS Fraud Detection: High-Throughput
 
 A production-oriented data mining project focused on detecting fraudulent e-commerce transactions using the Vesta real-world dataset.
 
