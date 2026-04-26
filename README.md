@@ -1,20 +1,20 @@
-# IEEE-CIS Fraud Detection: High-Fidelity XGBoost Pipeline
+# IEEE-CIS Fraud Detection
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![XGBoost](https://img.shields.io/badge/XGBoost-1.5%2B-orange)
 ![Pandas](https://img.shields.io/badge/Pandas-Memory_Optimized-green)
 ![Kaggle](https://img.shields.io/badge/Kaggle-Top_1700-informational)
 
-## 📌 Project Overview
+## Project Overview
 This repository contains the source code and methodology for detecting fraudulent credit card transactions within the highly imbalanced **IEEE-CIS Fraud Detection** dataset. 
 
-Moving beyond standard baseline models, this project tackles high-dimensionality (400+ features) and extreme class imbalance (~3.5% fraud) through advanced feature engineering, memory optimization, and gradient boosting. By engineering unique "Golden User Identifiers" (UIDs) to track temporal behavioral deviations, the final model achieved a **Private Leaderboard AUC of 0.9208** (Rank 1658) on Kaggle.
+Moving beyond standard baseline models, this project tackles high-dimensionality (400+ features) and extreme class imbalance (~3.5% fraud) through advanced feature engineering, memory optimization, and gradient boosting. By engineering unique "Golden User Identifiers" (UIDs) to track temporal behavioral deviations, the final model achieved a **Private Leaderboard AUC of 0.9234** (Rank 1650) on Kaggle.
 
 This project was developed as part of the Advanced Data Management curriculum (CSCI 5000) at the University of Arkansas.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 * `01_EDA_and_Insights.ipynb`: Exploratory Data Analysis, class imbalance visualization, and temporal trend discovery.
 * `02_XGBoost_Modeling.ipynb`: Memory optimization, feature engineering (UID creation), model training, and GroupKFold cross-validation.
@@ -24,7 +24,7 @@ This project was developed as part of the Advanced Data Management curriculum (C
 
 ---
 
-## 🚀 Key Engineering Challenges & Solutions
+## Key Engineering Challenges & Solutions
 
 ### 1. Memory Constraints & Data Architecture
 The raw dataset contains over 590,540 rows and consumes roughly 2.5 GB of RAM, causing out-of-memory errors in standard Colab environments. 
@@ -42,7 +42,7 @@ Fraud patterns evolve over time. Randomly splitting the data leads to overfittin
 
 ---
 
-## 🧠 Modeling Strategy
+## Modeling Strategy
 
 Initial baselines were established using Logistic Regression and Random Forest. However, these models struggled with the 434-dimensional space and the masked categorical `V-columns`. 
 
@@ -53,17 +53,17 @@ The final architecture relies on **XGBoost**:
 
 ---
 
-## 📊 Final Results
+## Final Results
 
 Our engineered features dominated the XGBoost information gain metrics, proving that logical temporal aggregations are significantly more valuable than raw model complexity.
 
-> **Kaggle Public AUC:** 0.9540  
-> **Kaggle Private AUC:** 0.9208  
-> **Final Leaderboard Rank:** 1658  
+> **Kaggle Public AUC:** 0.9542  
+> **Kaggle Private AUC:** 0.9234  
+> **Final Leaderboard Rank:** 1650  
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 1.  Clone this repository: `git clone https://github.com/your-username/IEEE-CIS-Fraud-Detection.git`
 2.  Download the dataset from Kaggle and place the `.csv` files into a `/data/` directory.
@@ -71,6 +71,6 @@ Our engineered features dominated the XGBoost information gain metrics, proving 
 
 ---
 
-## 👥 Contributors
-* **[Your Name]** - Data Engineering, Modeling, & Optimization
-* *Team Members (Person 2, Person 3, Person 4)*
+## Contributors
+* **Sri Mohan Abburi** - Data Engineering, Modeling, & Optimization
+* *Team Members (Makr Alexraj, Melanie Alexraj, Rakesh Gutta Chowdary)*
